@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    @apply caret-slate-500
+  }
+
+  input:read-only{
+    @apply bg-gray-100 !important
+  }
+}
+
+@layer components {
+    .form-control{
+      @apply h-12 rounded-md font-semibold px-4 transition ease-in-out outline-0 hover:shadow-input focus:shadow-input-active w-full bg-white;
+    }
+
+    .btn-primary{
+      @apply h-12 rounded-md font-bold px-4 text-center bg-sky-500 transition text-sky-100 hover:bg-sky-600 active:shadow-btn-primary-focus;
+    }
+
+    .btn-warning{
+      @apply h-12 rounded-md font-bold px-4 text-center bg-amber-400 transition text-amber-800 hover:bg-amber-500 active:shadow-btn-warning-focus
+    }
+
+    .btn-danger{
+      @apply h-12 rounded-md font-bold px-4 text-center bg-red-400 transition text-red-100 hover:bg-red-500 active:shadow-btn-danger-focus
+    }
+
+    .btn{
+      @apply h-12 rounded-md font-bold px-4 text-center bg-gray-100 transition text-gray-800 hover:bg-gray-300 active:shadow-btn-focus
+    }
+
+    .btn-white{
+      @apply h-12 rounded-md font-bold px-4 text-center bg-white transition text-gray-800 hover:bg-gray-100 active:shadow-btn-white-focus
+    }
+
+    .btn-void{
+      @apply h-6 rounded-md font-semibold px-2 text-center bg-white shadow transition text-red-400 hover:bg-gray-100 active:shadow-btn-focus text-xs
+    }
+
+    .btn-sm-primary{
+      @apply h-8 rounded-md font-semibold px-2 text-center bg-sky-400 text-sky-100 shadow transition hover:bg-sky-500 active:shadow-btn-focus
+    }
+
+    .btn-sm-warning{
+      @apply h-8 rounded-md font-semibold px-2 text-center bg-orange-400 text-orange-100 shadow transition hover:bg-orange-500 active:shadow-btn-focus
+    }
+
+    .btn-success{
+      @apply h-12 rounded-md font-bold px-4 text-center bg-green-600 transition text-green-100 hover:bg-green-700 active:shadow-btn-success-focus
+    }
+
+    .nav-link{
+      @apply hover:text-cyan-400
+    }
+
+    .form-group{
+      @apply flex flex-col
+    }
+
+    .form-group label{
+      @apply font-bold mb-1
+    }
+
+    .modal-submit-button-primary{
+      @apply w-full font-bold px-4 text-center bg-sky-500 transition text-sky-100 hover:bg-sky-600 focus:shadow-btn-primary-focus cursor-pointer rounded-b-xl py-3;
+    }
+
+    .modal-submit-button-danger{
+      @apply w-full font-bold px-4 text-center bg-red-400 transition text-red-100 hover:bg-red-500 hover:text-red-200 focus:shadow-btn-primary-focus cursor-pointer rounded-b-xl py-3;
+    }
+
+    .modal-submit-button-success{
+      @apply w-full font-bold px-4 text-center bg-green-500 transition text-green-100 hover:bg-green-600 focus:shadow-btn-primary-focus cursor-pointer rounded-b-xl py-3;
+    }
+
+    .sub-nav a{
+      @apply transition hover:text-cyan-400
+    }
+
+    .link{
+      @apply transition text-sky-400 hover:text-sky-700 cursor-pointer
+    }
+
+    .input-group{
+      @apply flex relative items-center rounded-md
+    }
+
+    .input-group .input-group-prepend{
+      @apply font-semibold text-gray-400 translate-x-4 absolute
+    }
+
+    .input-group .input-group-control{
+      @apply flex flex-row items-center h-12 rounded-md font-semibold px-4 indent-8 transition ease-in-out outline-0 hover:shadow-input focus:shadow-input-active w-full bg-white cursor-text;
+    }
+
+    .swal2-popup{
+      @apply rounded-lg
+    }
+
+    .table {
+      @apply bg-white rounded-2xl shadow-xl
+    }
+
+    .table thead th {
+      @apply text-left px-10 py-5 text-gray-500 font-bold
+    }
+
+    .table tbody tr td {
+      @apply px-10 py-5 font-bold
+    }
+
+    .table tbody tr:last-child td:first-child{
+      @apply rounded-bl-2xl
+    }
+
+    .table tbody tr:last-child td:last-child{
+      @apply rounded-br-2xl
+    }
+  }
