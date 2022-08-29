@@ -5,7 +5,7 @@
   "author": "Efaestus Software",
   "scripts": {
     "serve": "vue-cli-service serve --host 0.0.0.0",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "@vueuse/components": "^8.6.0",
