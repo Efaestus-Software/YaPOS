@@ -1,1 +1,1 @@
-cd frontend && npm run serve
+cd frontend && npm install && npm run serve
