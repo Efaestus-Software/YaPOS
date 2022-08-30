@@ -14,4 +14,4 @@
 - Double click the runServer.bat to run the backend server.
 - Double click the runYaPOS.bat to run the application.
 - Wait for the application to load.
-- Go to your favorite browser and type "localhost:8080" in the address bar.
+- Go to your favorite browser and type "localhost:8080" in the address bar to access the application.
